@@ -1026,9 +1026,18 @@ p {
 
 .badgets {
   display: flex;
+  flex-wrap: wrap;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(75%);
+}
+.badget:first-child {
+  margin-left: 5px;
 }
 .badget:not(:first-child) {
   margin-left: 5px;
+  margin-top: 5px;
 }
 /*End of Badget*/
 .project-link {
