@@ -132,6 +132,7 @@ p {
   padding: 0 10px;
 }
 #header .nav-list ul {
+  display: none;
   list-style: none;
   position: absolute;
   background-color: rgb(31, 30, 30);
@@ -139,7 +140,6 @@ p {
   height: 100vh;
   left: 100%;
   top: 0;
-  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,7 @@ p {
   transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
-  display:flex;
+  display: flex;
   left: 0%;
 }
 #header .nav-list ul a {
@@ -317,14 +317,20 @@ p {
 
 .badgets {
   display: flex;
-  /* flex-wrap: wrap; */
-  /* flex-direction: column; */
+  flex-wrap: wrap;
   width: 410px;
-  /* align-items: center; */
 }
 
-.badget:not(:first-child) {
+.badget {
   margin-left: 5px;
+}
+.badget:last-child {
+  margin-top: 10px;
+  margin-left: 6px;
+}
+
+.badget {
+  width: auto;
 }
 /*End of Badget*/
 #services .service-top {
