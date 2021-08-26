@@ -838,14 +838,17 @@ p {
     transform: scale(1);
   }
   /* End of nav menu effect */
-  /*Parallax Effect*/
+}
+
+/* End of Media Query for Desktop */
+/*Parallax Effect*/
 /* Service Item Effect */
 
 .service-item.service1 {
   left: -364px;
   animation: myAnim 3s ease forwards;
 }
-  .service-item > p {
+.service-item > p {
   width: 260px;
 }
 .service-item > p:last-child {
@@ -995,10 +998,6 @@ p {
   }
 }
 /*End of Service Item Effect */
-}
-
-/* End of Media Query for Desktop */
-
 /*Project Section*/
 .project1 {
   left: -600px;
