@@ -139,7 +139,7 @@ p {
   height: 100vh;
   left: 100%;
   top: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -148,6 +148,7 @@ p {
   transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
+  display:flex;
   left: 0%;
 }
 #header .nav-list ul a {
