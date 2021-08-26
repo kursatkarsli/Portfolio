@@ -347,6 +347,16 @@ p {
   transition: transform 0.5s ease;
   flex-wrap: wrap;
 }
+#services .service-item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.service-item > p {
+  width: 322px;
+}
+.service-item > p:last-child {
+  width: 322px;
+}
 #services .service-item:hover {
   transform: scale(1, 1.1);
 }
@@ -838,195 +848,196 @@ p {
     transform: scale(1);
   }
   /* End of nav menu effect */
+  /*Parallax Effect*/
+  /* Service Item Effect */
+
+  .service-item.service1 {
+    left: -364px;
+    animation: myAnim 3s ease forwards;
+  }
+  .service-item > p {
+    width: 260px;
+  }
+  .service-item > p:last-child {
+    width: 322px;
+  }
+  .service1:hover {
+    transform: scale(1, 1.4);
+  }
+  .service-item.service3 {
+    animation: myAnimRight 3s ease forwards;
+  }
+  .service2 {
+    animation: service-opacity 2.75s ease forwards;
+  }
+  @keyframes myAnim {
+    0% {
+      left: -210.5px;
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(-48px);
+    }
+
+    24% {
+      opacity: 1;
+    }
+
+    40% {
+      left: -180px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-26px);
+    }
+
+    65% {
+      left: -140px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-13px);
+    }
+
+    82% {
+      left: -90.5px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-6.5px);
+    }
+
+    93% {
+      left: -55px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      left: -30.5px;
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+
+    100% {
+      left: 0;
+
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px) hover;
+    }
+  }
+  @keyframes myAnimRight {
+    0% {
+      right: -210.5px;
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(-48px);
+    }
+
+    24% {
+      opacity: 1;
+    }
+
+    40% {
+      right: -180px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-26px);
+    }
+
+    65% {
+      right: -140px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-13px);
+    }
+
+    82% {
+      right: -90.5px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-6.5px);
+    }
+
+    93% {
+      right: -55px;
+
+      animation-timing-function: ease-in;
+      transform: translateX(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      right: -30.5px;
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+
+    100% {
+      right: 0;
+
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px) hover;
+    }
+  }
+
+  @keyframes service-opacity {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /*End of Service Item Effect */
+  /*Project Section*/
+  .project1 {
+    left: -600px;
+    position: relative;
+    animation: left 2s ease forwards;
+  }
+  .project2 {
+    right: -600px;
+    animation: right 2s ease forwards;
+    position: relative;
+  }
+  @keyframes left {
+    0% {
+      left: -600px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes right {
+    0% {
+      right: -600px;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  /*End of Project Section*/
+  /*End of Parallax Effect*/
 }
 
 /* End of Media Query for Desktop */
-/*Parallax Effect*/
-/* Service Item Effect */
 
-.service-item.service1 {
-  left: -364px;
-  animation: myAnim 3s ease forwards;
-}
-.service-item > p {
-  width: 260px;
-}
-.service-item > p:last-child {
-  width: 322px;
-}
-.service1:hover {
-  transform: scale(1, 1.4);
-}
-.service-item.service3 {
-  animation: myAnimRight 3s ease forwards;
-}
-.service2 {
-  animation: service-opacity 2.75s ease forwards;
-}
-@keyframes myAnim {
-  0% {
-    left: -210.5px;
-    animation-timing-function: ease-in;
-    opacity: 1;
-    transform: translateX(-48px);
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  40% {
-    left: -180px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-26px);
-  }
-
-  65% {
-    left: -140px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-13px);
-  }
-
-  82% {
-    left: -90.5px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-6.5px);
-  }
-
-  93% {
-    left: -55px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-4px);
-  }
-
-  25%,
-  55%,
-  75%,
-  87%,
-  98% {
-    left: -30.5px;
-    animation-timing-function: ease-out;
-    transform: translateX(0px);
-  }
-
-  100% {
-    left: 0;
-
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateX(0px) hover;
-  }
-}
-@keyframes myAnimRight {
-  0% {
-    right: -210.5px;
-    animation-timing-function: ease-in;
-    opacity: 1;
-    transform: translateX(-48px);
-  }
-
-  24% {
-    opacity: 1;
-  }
-
-  40% {
-    right: -180px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-26px);
-  }
-
-  65% {
-    right: -140px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-13px);
-  }
-
-  82% {
-    right: -90.5px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-6.5px);
-  }
-
-  93% {
-    right: -55px;
-
-    animation-timing-function: ease-in;
-    transform: translateX(-4px);
-  }
-
-  25%,
-  55%,
-  75%,
-  87%,
-  98% {
-    right: -30.5px;
-    animation-timing-function: ease-out;
-    transform: translateX(0px);
-  }
-
-  100% {
-    right: 0;
-
-    animation-timing-function: ease-out;
-    opacity: 1;
-    transform: translateX(0px) hover;
-  }
-}
-
-@keyframes service-opacity {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  75% {
-    opacity: 0.75;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-/*End of Service Item Effect */
-/*Project Section*/
-.project1 {
-  left: -600px;
-  position: relative;
-  animation: left 2s ease forwards;
-}
-.project2 {
-  right: -600px;
-  animation: right 2s ease forwards;
-  position: relative;
-}
-@keyframes left {
-  0% {
-    left: -600px;
-  }
-  100% {
-    left: 0;
-  }
-}
-@keyframes right {
-  0% {
-    right: -600px;
-  }
-  100% {
-    right: 0;
-  }
-}
-/*End of Project Section*/
-/*End of Parallax Effect*/
 /*Badget*/
 
 .badgets {
