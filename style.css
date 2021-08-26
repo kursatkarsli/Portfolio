@@ -346,6 +346,7 @@ p {
   overflow: hidden;
   transition: transform 0.5s ease;
   flex-wrap: wrap;
+  margin-bottom:'10px'
 }
 #services .service-item:hover {
   transform: scale(1, 1.1);
