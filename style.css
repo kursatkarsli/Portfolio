@@ -346,7 +346,6 @@ p {
   overflow: hidden;
   transition: transform 0.5s ease;
   flex-wrap: wrap;
-  margin-bottom:'10px'
 }
 #services .service-item:hover {
   transform: scale(1, 1.1);
@@ -839,10 +838,7 @@ p {
     transform: scale(1);
   }
   /* End of nav menu effect */
-}
-
-/* End of Media Query for Desktop */
-/*Parallax Effect*/
+  /*Parallax Effect*/
 /* Service Item Effect */
 
 .service-item.service1 {
@@ -993,6 +989,10 @@ p {
   }
 }
 /*End of Service Item Effect */
+}
+
+/* End of Media Query for Desktop */
+
 /*Project Section*/
 .project1 {
   left: -600px;
@@ -1026,18 +1026,9 @@ p {
 
 .badgets {
   display: flex;
-  flex-wrap: wrap;
-  width: 120px;
-  justify-content: center;
-  align-items: center;
-  transform: translate(75%);
-}
-.badget:first-child {
-  margin-left: 5px;
 }
 .badget:not(:first-child) {
   margin-left: 5px;
-  margin-top: 5px;
 }
 /*End of Badget*/
 .project-link {
