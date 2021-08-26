@@ -322,11 +322,11 @@ p {
 }
 
 .badget {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 .badget:last-child {
   margin-top: 10px;
-  margin-left: 6px;
+  margin-left: 14px;
 }
 
 .badget {
