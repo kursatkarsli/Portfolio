@@ -312,6 +312,20 @@ p {
   padding: 100px 0;
 }
 
+/*Badget*/
+
+.badgets {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: column; */
+  width: 410px;
+  /* align-items: center; */
+}
+
+.badget:not(:first-child) {
+  margin-left: 5px;
+}
+/*End of Badget*/
 #services .service-top {
   max-width: 700px;
   margin: 0 auto;
@@ -1034,19 +1048,22 @@ p {
   }
   /*End of Project Section*/
   /*End of Parallax Effect*/
+  /*Badget*/
+
+  .badgets {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .badget:not(:first-child) {
+    margin-left: 5px;
+    margin-top: 0;
+  }
+  /*End of Badget*/
 }
 
 /* End of Media Query for Desktop */
 
-/*Badget*/
-
-.badgets {
-  display: flex;
-}
-.badget:not(:first-child) {
-  margin-left: 5px;
-}
-/*End of Badget*/
 .project-link {
   text-decoration: none;
   color: whitesmoke;
@@ -1072,7 +1089,7 @@ p {
   position: absolute;
   display: block;
   width: 30%;
-  height: 2.01px;
+  height: 2px;
   bottom: 0;
   left: 0;
   background-color: #000;
